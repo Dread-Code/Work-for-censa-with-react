@@ -3,11 +3,9 @@ import { AddCategory } from "./components/AddCategory";
 import { GifGrid } from "./components/GifGrid";
 
 
-export const GifExpertApp = () => {
+export const GifExpertApp = ({defaulCategories = []}) => {
 
-    let programs = ['One Punch'];
-
-    const [categories, setCategories] = useState(programs);
+    const [categories, setCategories] = useState(defaulCategories);
 
     return (
       <div>
